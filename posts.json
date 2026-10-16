@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "titulo": "Analisis de tiempos de espera en guardias hospitalarias con Python y Pandas",
+        "contenido": "Exploracion de tiempos de triage y optimizacion de turnos medicos con Pandas",
+        "autor": {
+            "nombre": "Lara Medina",
+            "bio": "Estudiante de Data Science enfocada en analítica aplicada a la salud y HealthTech",
+            "especialidad": "",
+            "redes_sociales": []
+        },
+        "estado": "Publicado"
+    },
+    {
+        "id": 2,
+        "titulo": "Limpieza y anonimizacion de registros clinicos segun normativas de privacidad",
+        "contenido": "Tecnicas de enmascaramiento de datos personales en historias clinicas con Python",
+        "autor": {
+            "nombre": "Lara Medina",
+            "bio": "",
+            "especialidad": "",
+            "redes_sociales": []
+        },
+        "estado": "Publicado"
+    },
+    {
+        "id": 3,
+        "titulo": "Modelo predictivo para reingresos de pacientes cronicos en 30 dias",
+        "contenido": "Prototipo de clasificacion para identificar riesgo de rehospitalizacion temprana",
+        "autor": {
+            "nombre": "Lara Medina",
+            "bio": "",
+            "especialidad": "",
+            "redes_sociales": []
+        },
+        "estado": "Publicado"
+    },
+    {
+        "id": 4,
+        "titulo": "",
+        "contenido": "",
+        "autor": {
+            "nombre": "Lara Medina",
+            "bio": "",
+            "especialidad": "",
+            "redes_sociales": []
+        },
+        "estado": "Publicado"
+    },
+    {
+        "id": 5,
+        "titulo": "",
+        "contenido": "",
+        "autor": {
+            "nombre": "",
+            "bio": "",
+            "especialidad": "",
+            "redes_sociales": []
+        },
+        "estado": "Publicado"
+    }
+]
