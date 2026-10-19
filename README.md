@@ -1,22 +1,50 @@
-# Blog por Consola - Preentrega 6 (POO y Persistencia JSON)
+# Blog Django - Preentrega 7
 
-Este proyecto contiene **Programación Orientada a Objetos (POO)** y **persistencia de datos mediante JSON**, en el marco de la Diplomatura en Data Science.
+inicio del blog web desarrollado con Django 
 
----
+## Descripción
 
-## 📁 Estructura del proyecto
+Este repositorio contiene la estructura inicial de un proyecto Django configurado para la construcción de un blog.
+Contenido: proyecto base `blog_project`, app `posts`, configuración idioma español, hoza horaria de argentina y control de versiones con Git y GitHub.
 
-```text
-blog_consola/            # carpeta raiz
-│
-├── main.py              # Bloque de codigo principal
-├── README.md            # Documentación del proyecto
-├── posts.json           # Archivo de persistencia de datos en formato JSON
-│
-└── blog/                # Paquete con los módulos de lógica
-    ├── __init__.py      # Inicializador del paquete blog
-    ├── modelos.py       # Definición de clases: Autor, Post y Blog (POO)
-    ├── datos.py         # Carga, guardado y serialización de objetos hacia/desde JSON
-    ├── menu.py          # Interfaz de usuario por consola y presentación del menú
-    ├── operaciones.py   # Funciones auxiliares de búsqueda y filtrado
-    └── validaciones.py  # Reglas de validación para los posts
+## Estructura del proyecto
+
+- `blog_project/`: configuración principal del proyecto Django (settings, urls, wsgi).
+- `posts/`: aplicación encargada de la lógica de publicaciones del blog.
+- `manage.py`: script de administración de Django.
+- `.gitignore`: exclusión de archivos temporales, base de datos local y entorno virtual.
+- `requirements.txt`: listado de dependencias del proyecto.
+
+## Requisitos previos
+
+- Python 3.10 o superior
+- Git
+
+## Instalación y puesta en marcha
+
+1. Clonar el repositorio:
+git clone URL_DE_TU_REPOSITORIO_EN_GITHUB
+
+2. Entrar a la carpeta del proyecto:
+cd blog_consola
+
+3. Crear el entorno virtual:
+python -m venv venv
+
+4. Activar el entorno virtual:
+- En Windows PowerShell:
+.\venv\Scripts\Activate.ps1
+
+5. Instalar dependencias:
+pip install -r requirements.txt
+
+6. Aplicar migraciones iniciales:
+python manage.py migrate
+
+7. Ejecutar el servidor de desarrollo:
+python manage.py runserver
+
+8. Abrir en el navegador:
+http://127.0.0.1:8000/
+
+
