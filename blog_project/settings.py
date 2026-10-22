@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    #carpeta estatica
     'django.contrib.staticfiles',
     #mi app
     'posts.apps.PostsConfig',
