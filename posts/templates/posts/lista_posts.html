@@ -2,21 +2,20 @@
 
 {% block title %}Posts | Mi Blog{% endblock %}
 
+
 {% block content %}
-    <h2>Listado de posts</h2>
+    <h1>{{ page_title }}</h1>
 
-    <ul>
-        {% for post in posts %}
-            <li>
-                <a href="{% url 'detalle_post' post.id %}">
-                    {{ post.titulo }}
-                    
-                </a>
-                - {{ post.autor }}
-
-            </li>
-        {% endfor %}
-    </ul>
+    {% for post in posts %}
+        <article>
+            <h2>{{ post.titulo }}</h2>
+            <p>-Escrito por {{ post.autor }}</p>
+            <p>-Publicado el {{ post.fecha_creacion | date:"d/m/Y" }}</p>
+            <p>{{  post.contenido |truncatewords:40 }}</p>
+        </article>
+    {% empty %}
+        <p>Todavía no hay posts publicados.</p>
+    {% endfor %}
 {% endblock %}
 
 

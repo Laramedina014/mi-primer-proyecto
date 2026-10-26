@@ -1,29 +1,22 @@
 from django.shortcuts import render
+from .models import Post
 
 def inicio(request):
     return render(request, "posts/inicio.html")
 
 def lista_posts(request):
-    posts = [
-        {"id": 1,
-         "titulo": "Analisis de tiempos de espera en guardias hospitalarias con Python y Pandas",
-         "contenido": "Exploracion de tiempos de triage y optimizacion de turnos medicos con Pandas.",
-         "autor": "Lara"},
 
-        {"id": 2,
-         "titulo": "Limpieza y anonimizacion de registros clinicos segun normativas de privacidad",
-         "contenido":"Tecnicas de enmascaramiento de datos personales en historias clinicas con Python.",
-         "autor": "Lara"},
+    posts= Post.objects.filter(estado="publicado").order_by("-fecha_creacion")
 
-        {"id": 3,
-         "titulo": "Modelo predictivo para reingresos de pacientes cronicos en 30 dias",
-         "contenido": "Prototipo de clasificacion para identificar riesgo de rehospitalizacion temprana.", 
-         "autor": "Lara"},
-    ]
     contexto = {
-        "posts": posts
-    }
-    return render(request, "posts/lista_posts.html", contexto)
+        "posts": posts,
+        "page_title": "Ultimos posts"
+        }
+
+
+    return render (request, "posts/lista_posts.html", contexto)
+
+
 
 def contacto(request):
     return render(request, "posts/contacto.html")
