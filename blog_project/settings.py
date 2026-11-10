@@ -129,3 +129,9 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+# indica la ubicación física donde Django guardará los archivos subidos.
+MEDIA_URL = "/media/"
+
+# en la raíz del proyecto.
+MEDIA_ROOT = BASE_DIR / "media"
